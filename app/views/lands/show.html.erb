@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @land.location %>
+</p>
+
+<p>
+  <strong>Title deed:</strong>
+  <%= @land.title_deed %>
+</p>
+
+<p>
+  <strong>Climatic condition:</strong>
+  <%= @land.climatic_condition %>
+</p>
+
+<p>
+  <strong>Soil type:</strong>
+  <%= @land.soil_type %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @land.user %>
+</p>
+
+<p>
+  <strong>Map:</strong>
+  <%= @land.map %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @land.size %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @land.description %>
+</p>
+
+<%= link_to 'Edit', edit_land_path(@land) %> |
+<%= link_to 'Back', lands_path %>

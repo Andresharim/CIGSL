@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  location: MyString
+  title_deed: MyString
+  climatic_condition: MyString
+  soil_type: MyString
+  user_id: 
+  map: MyString
+  size: MyString
+  description: MyText
+
+two:
+  location: MyString
+  title_deed: MyString
+  climatic_condition: MyString
+  soil_type: MyString
+  user_id: 
+  map: MyString
+  size: MyString
+  description: MyText

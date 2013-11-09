@@ -1,0 +1,41 @@
+<h1>Listing lands</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Title deed</th>
+      <th>Climatic condition</th>
+      <th>Soil type</th>
+      <th>User</th>
+      <th>Map</th>
+      <th>Size</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lands.each do |land| %>
+      <tr>
+        <td><%= land.location %></td>
+        <td><%= land.title_deed %></td>
+        <td><%= land.climatic_condition %></td>
+        <td><%= land.soil_type %></td>
+        <td><%= land.user %></td>
+        <td><%= land.map %></td>
+        <td><%= land.size %></td>
+        <td><%= land.description %></td>
+        <td><%= link_to 'Show', land %></td>
+        <td><%= link_to 'Edit', edit_land_path(land) %></td>
+        <td><%= link_to 'Destroy', land, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Land', new_land_path %>

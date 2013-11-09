@@ -1,7 +1,8 @@
 CIGSL::Application.routes.draw do
-  resources :photos
-
-  resources :lands
+  resources :lands do
+    resources :photos
+    resources :comments
+  end
 
   get "home/index"
   devise_for :users

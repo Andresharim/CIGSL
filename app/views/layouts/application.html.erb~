@@ -7,8 +7,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class = "navbar navbar-fixed-top navbar-inverse" role = "navigation">
+  <div class = "navbar-inner">
+    <div class ="container">
+      <a href = "/" class = "brand">CIGSL :: Can I Get Some Land?</a>
+    </div>
+  </div>
+</div>
 
-<%= yield %>
+ <p class="notice"><%= notice %></p>
+ <p class="alert"><%= alert %></p>
+ <div class = "container">      
+  <%= yield %>
+ </div>
+ 
+ <footer id = "page-footer">
+  <div class = "container">
+    Copyright &copy 2013
+  </div>
+ </footer>
 
 </body>
 </html>

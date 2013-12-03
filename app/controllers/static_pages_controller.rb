@@ -1,5 +1,9 @@
 class StaticPagesController < ApplicationController
   before_action :set_static_page, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
+  before_filter do 
+    redirect_to :new_user_session_path unless current_user && current_user.admin?
+  end
 
   # GET /static_pages
   # GET /static_pages.json

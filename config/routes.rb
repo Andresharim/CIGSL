@@ -1,4 +1,6 @@
 CIGSL::Application.routes.draw do
+  resources :static_pages
+
   resources :lands do
     resources :photos
     resources :comments
